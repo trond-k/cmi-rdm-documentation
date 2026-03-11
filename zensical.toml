@@ -2,6 +2,7 @@
 site_name = "RDM Hub"
 site_description = "Research data management guidance for CMI researchers"
 # site_url = "https://..."
+repo_url = "https://github.com/trond-k/cmi-rdm-documentation"
 docs_dir = "docs"
 site_dir = "site"
 
