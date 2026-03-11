@@ -7,6 +7,32 @@ site_dir = "site"
 
 copyright = "&copy; Chr. Michelsen Institute"
 
+extra_css = ["stylesheets/extra.css"]
+
+nav = [
+  { "Home" = "index.md" },
+  { "BEFORE" = [
+    "before/index.md",
+    { "Data management plans" = "before/dmp.md" },
+    { "Ethics and approvals" = "before/ethics.md" },
+    { "Storage" = "before/storage.md" },
+    { "Partnerships" = "before/partnerships.md" },
+  ]},
+  { "DURING" = [
+    "during/index.md",
+    { "File organisation" = "during/file-organisation.md" },
+    { "Documentation" = "during/documentation.md" },
+    { "Security" = "during/security.md" },
+  ]},
+  { "AFTER" = [
+    "after/index.md",
+    { "Cleaning" = "after/cleaning.md" },
+    { "Archiving" = "after/archiving.md" },
+    { "Sharing" = "after/sharing.md" },
+    { "Deletion" = "after/deletion.md" },
+  ]},
+]
+
 [[project.theme.palette]]
 media = "(prefers-color-scheme: light)"
 scheme = "default"
@@ -18,29 +44,3 @@ media = "(prefers-color-scheme: dark)"
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
-
-extra_css = ["stylesheets/extra.css"]
-
-nav = [
-  { "Home" = "index.md" },
-  { "BEFORE" = [
-    { "Overview" = "before/index.md" },
-    { "Data management plans" = "before/dmp.md" },
-    { "Ethics and approvals" = "before/ethics.md" },
-    { "Storage" = "before/storage.md" },
-    { "Partnerships" = "before/partnerships.md" },
-  ]},
-  { "DURING" = [
-    { "Overview" = "during/index.md" },
-    { "File organisation" = "during/file-organisation.md" },
-    { "Documentation" = "during/documentation.md" },
-    { "Security" = "during/security.md" },
-  ]},
-  { "AFTER" = [
-    { "Overview" = "after/index.md" },
-    { "Cleaning" = "after/cleaning.md" },
-    { "Archiving" = "after/archiving.md" },
-    { "Sharing" = "after/sharing.md" },
-    { "Deletion" = "after/deletion.md" },
-  ]},
-]
