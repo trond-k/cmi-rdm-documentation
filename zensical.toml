@@ -19,22 +19,24 @@ scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
 
+extra_css = ["stylesheets/extra.css"]
+
 nav = [
   { "Home" = "index.md" },
-  { "Before" = [
+  { "BEFORE" = [
     { "Overview" = "before/index.md" },
     { "Data management plans" = "before/dmp.md" },
     { "Ethics and approvals" = "before/ethics.md" },
     { "Storage" = "before/storage.md" },
     { "Partnerships" = "before/partnerships.md" },
   ]},
-  { "During" = [
+  { "DURING" = [
     { "Overview" = "during/index.md" },
     { "File organisation" = "during/file-organisation.md" },
     { "Documentation" = "during/documentation.md" },
     { "Security" = "during/security.md" },
   ]},
-  { "After" = [
+  { "AFTER" = [
     { "Overview" = "after/index.md" },
     { "Cleaning" = "after/cleaning.md" },
     { "Archiving" = "after/archiving.md" },
