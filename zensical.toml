@@ -1,0 +1,44 @@
+[project]
+site_name = "RDM Hub"
+site_description = "Research data management guidance for CMI researchers"
+# site_url = "https://..."
+docs_dir = "docs"
+site_dir = "site"
+
+copyright = "&copy; Chr. Michelsen Institute"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+nav = [
+  { "Home" = "index.md" },
+  { "Before" = [
+    { "Overview" = "before/index.md" },
+    { "Data management plans" = "before/dmp.md" },
+    { "Ethics and approvals" = "before/ethics.md" },
+    { "Storage" = "before/storage.md" },
+    { "Partnerships" = "before/partnerships.md" },
+  ]},
+  { "During" = [
+    { "Overview" = "during/index.md" },
+    { "File organisation" = "during/file-organisation.md" },
+    { "Documentation" = "during/documentation.md" },
+    { "Security" = "during/security.md" },
+  ]},
+  { "After" = [
+    { "Overview" = "after/index.md" },
+    { "Cleaning" = "after/cleaning.md" },
+    { "Archiving" = "after/archiving.md" },
+    { "Sharing" = "after/sharing.md" },
+    { "Deletion" = "after/deletion.md" },
+  ]},
+]
